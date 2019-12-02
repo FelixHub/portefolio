@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Acceuil extends React.Component  {
+export default class Blog extends React.Component  {
 
     constructor(props) {
         super(props);
@@ -9,7 +9,7 @@ export default class Acceuil extends React.Component  {
 
     render(){
         return(
-            <div>acceuil</div>
+            <div className="blog">blog</div>
         )
     }
 

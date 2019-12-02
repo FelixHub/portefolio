@@ -10,10 +10,10 @@ export default class Videos extends React.Component  {
 
     render(){
         return(
-            <Spring config={{duration:2000}} from={{ opacity: 0, marginLeft : -1000 }} to={{ opacity: 1,marginLeft : 0 }}  >
+            <Spring  from={{ marginLeft : -2000 ,transform: "rotate(20deg)" }} to={{ marginLeft : 0,transform: "rotate(0deg)"}}  >
                 {props => 
-               ( <div style={props}>
-                   <h1>ezrtyhujyhtg  </h1>
+               ( <div className="videos" style={props}>
+                   videos
                 </div>)
                 }
             </Spring>

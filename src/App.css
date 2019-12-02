@@ -1,63 +1,14 @@
-* {    
-    margin: auto ;
-    padding: 0 ;
+*{
+    margin : 0;
+    font-family: 'Open Sans', sans-serif;
 }
-
 .app{
-    display : flex;
-    background-color: rgb(0, 0, 0);
-    width : 161.8vh;
-    height : 100vh;
+    background-color: #FFFFEA;
     margin : auto;
-
-}
-
-.fibo_right_start {
-    background-color: yellow;
-    height : 100%;
-    width : 100%;
-    margin-right : 0;
-}
-
-
-
-.fibo_down {
-    background-color: rgb(68, 109, 246);
-    height : 100%;
-    width : 38.2%;
-    margin-left : 0;
-}
-
-.fibo_left{
-    background-color: rgb(220, 73, 58);
-    height : 38.2%;
-    
-}
-
-.fibo_up{
-    background-color: black;
-    height : 100%;
-    width : 38.2%;
-    margin-right: 0;
-    position : relative;
-  
-}
-
-.fibo_right {
-    background-color: yellow;
-    height : 38.2%;
-    width : 100%;
-    position:absolute; 
-    bottom:0;
-}
-
-
-.sidebar{
-    display: inline-block;
     height : 100vh;
-    width : 28%;
-    margin-left : 0;
-    background-color: blanchedalmond;
+    text-align:center;
+    
+
 }
 
 .logo {
@@ -65,10 +16,91 @@
     width : 60px;
 }
 
-.buttoncontainer{
-    display: inline-block;
-}
 
 .view {
     display: inline-block;
+}
+
+.title{
+    padding-top : 20px;
+    font-size : 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.buttoncontainer{
+    display: inline-block;
+    margin : auto;
+    overflow: hidden;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 10px;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    font-size: 60px;
+}
+
+button:hover{
+    transform : rotate(-20deg)
+}
+.selected{
+    transform : rotate(-20deg)
+}
+
+.about {
+    padding : 10px;
+    background-color : #F6F740;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    font-size : 20px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    padding : 10px;
+    background-color : #2176FF;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    font-size : 20px;
+}
+
+.blog {
+    padding : 10px;
+    background-color : #FFFFEA;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    font-size : 20px;
+}
+
+.videos {
+    padding : 10px;
+    background-color : #FF5E5B;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    font-size : 20px;
+}
+
+.footer{
+    position : absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color : #2176FF;
+}
+
+span.date{
+    margin : 15px;
+    float : left;
+}
+
+span.social{
+    margin : 15px;
+    float : right ;
 }
