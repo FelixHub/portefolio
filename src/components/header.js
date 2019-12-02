@@ -12,7 +12,20 @@ export default class Header extends React.Component  {
         return(
             <div className="header">
                 <div className="profil">
-                    <div className="title">FÉLIX HUBERT</div>
+                    <div className="title">
+                        <span style={{color :"#2176FF"}}>F</span>
+                        <span>É</span>
+                        <span>L</span>
+                        <span>I</span>
+                        <span>X</span>
+                        <span> </span>
+                        <span style={{color :"#FF5E5B"}} >H</span>
+                        <span>U</span>
+                        <span>B</span>
+                        <span>E</span>
+                        <span>R</span>
+                        <span>T</span>
+                    </div>
                 </div>
                 <div className='buttoncontainer'>
                     <button className={ this.props.view == 'about' ? 'selected' : 'notselected'} onClick={() => this.props.changeView('about')} > 👨 </button>

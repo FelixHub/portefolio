@@ -2,13 +2,14 @@
     margin : 0;
     font-family: 'Open Sans', sans-serif;
 }
-.app{
+
+body{
     background-color: #FFFFEA;
+}
+.app{
     margin : auto;
     height : 100vh;
     text-align:center;
-    
-
 }
 
 .logo {
@@ -19,6 +20,8 @@
 
 .view {
     display: inline-block;
+    margin-bottom : 20px;
+    width : 80%;
 }
 
 .title{
@@ -58,7 +61,8 @@ button:hover{
     border-width: 4px;
     border-color: black;
     font-size : 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    display: inline-block;
 }
 
 .projects {
@@ -68,6 +72,8 @@ button:hover{
     border-width: 4px;
     border-color: black;
     font-size : 20px;
+    margin-bottom: 60px;
+    display: inline-block;
 }
 
 .blog {
@@ -77,6 +83,8 @@ button:hover{
     border-width: 4px;
     border-color: black;
     font-size : 20px;
+    margin-bottom: 60px;
+    display: inline-block;
 }
 
 .videos {
@@ -86,10 +94,12 @@ button:hover{
     border-width: 4px;
     border-color: black;
     font-size : 20px;
+    margin-bottom: 60px;
+    display: inline-block;
 }
 
 .footer{
-    position : absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     background-color : #2176FF;
@@ -103,4 +113,35 @@ span.date{
 span.social{
     margin : 15px;
     float : right ;
+}
+
+.post{
+    border-style : solid;
+    border-width: 2px;
+    border-color : black;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.posttitle {
+    padding: 20px;
+    font-size : 35px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    border-bottom-style: solid ;
+    border-bottom-width: 2px;
+    border-bottom-color : black;
+}
+
+.postdate {
+    float : left;
+    margin-top : -23px;
+    background-color :black;
+    color : #FFFFEA;
+    padding : 1px;
+}
+
+.content {
+    padding: 20px;
+    text-align: justify;
 }

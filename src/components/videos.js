@@ -1,22 +1,34 @@
 import React from 'react';
-import { Spring  } from 'react-spring/renderprops';
+
+import Post from './post.js';
+var json = require('../post_videos.json');
 
 export default class Videos extends React.Component  {
 
     constructor(props) {
         super(props);
-        this.state={};
+        this.state={ posts : json };
     }
 
     render(){
+
+        const post_videos = this.state.posts.map((post) => {
+            return(
+                 <Post type="videos" date={post.date} title={post.title} content={post.content}/>
+            ) 
+     })
         return(
-            <Spring  from={{ marginLeft : -2000 ,transform: "rotate(20deg)" }} to={{ marginLeft : 0,transform: "rotate(0deg)"}}  >
-                {props => 
-               ( <div className="videos" style={props}>
-                   videos
-                </div>)
-                }
-            </Spring>
+            
+        
+        <div>
+            <div className="videos" >
+                There's nothing like a video shoot with friends.
+            </div>
+            <div className="wall">
+                {post_videos}
+            </div>
+        </div>
+            
         )
     }
 

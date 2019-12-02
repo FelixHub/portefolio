@@ -1,26 +1,31 @@
 import React from 'react';
-import { Spring  } from 'react-spring/renderprops';
+
+import Post from './post.js';
+var json = require('../post_about.json');
 
 export default class About extends React.Component  {
 
     constructor(props) {
         super(props);
-        this.state={};
+        this.state={ posts : json };
     }
 
     render(){
+
+        const post_about = this.state.posts.map((post) => {
+               return(
+                    <Post type="about" date={post.date} title={post.title} content={post.content}/>
+               ) 
+        })
+
         return(
             <div>
                 <div className="about" >
-                    Hi, nice to meet you ! I am Félix, an engineering student from France. <br/><br/>
-                    This is my personal website, with random projects sorted in 3 categories : <br/>
-                    - Computer & Science stuff <br/>
-                    - Opinion pieces & stories <br/>
-                    - Art & Videos projects <br/><br/><br/>
-
-                    Have fun !
+                    Hi, nice to see you here ! I am Félix, an engineering student from France.
                 </div>
-
+                <div className="wall">
+                    {post_about}
+                </div>
             </div>
             
         )

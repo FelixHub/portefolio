@@ -33,7 +33,7 @@ export default  class App extends React.Component  {
             'about' : <About/> }[this.state.view]}
          </div> 
          <div className="footer">
-           <span className="date">© 2019</span> <span className="social">FTW</span>
+           <span className="date">© 2019</span> <span className="social">Have a good day !</span>
          </div>
       </div>
     );
