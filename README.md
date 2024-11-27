@@ -1,6 +1,3 @@
-# portefolio
+# Personal Website
 
-
-shamefully unadvanced portefolio website
-
-https://felixhub.github.io/portefolio/
+https://felixhub.github.io/
